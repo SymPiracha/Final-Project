@@ -36,10 +36,10 @@ def main():
                 json.dump(post['data'], f1)
                 f1.write("\n")
                 added_posts.append(post["data"]["name"])
-                if len(added_posts) == 333:
+                if len(added_posts) == 250:
                     break
-        if len(added_posts) == 333:
-            break
+            if len(added_posts) == 250:
+                break
     f1.close()
     
 if __name__ == "__main__":
