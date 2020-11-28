@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for file in ./*/*.json; do 
+	head -n 250 "$file" > "$file.250" && 
+	mv "$file.250" "$file"
+done
